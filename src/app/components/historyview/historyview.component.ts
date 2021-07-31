@@ -40,7 +40,6 @@ export class HistoryviewComponent implements OnInit {
     console.log(this.semestryHystory);
   }
 
-
   returnBlob(res):Blob{
     return new Blob([res],{type:'application/pdf'});
   }

@@ -1,21 +1,21 @@
 .viewGeneral{
   width: 100%;
-  /*border: 1px solid red;*/
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .individualView{
   width: 50%;
-  /*border: 1px solid yellowgreen;*/
+  min-width: 500px;
   border-radius: 5px;
   margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.568);
-  color: whitesmoke;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -25,6 +25,7 @@ h3{
 
 .imgView{
   width: 100%;
+  margin: 0 auto;
 }
 
 .buttonsCont{
@@ -37,18 +38,34 @@ h3{
 
 button{
   width: fit-content;
-  background-color: rgba(255, 72, 0, 0.336);
+  background-color: rgba(0, 0, 0, 0.815);
   border: none;
   border-radius: 5px;
   margin:10px;
   padding: 10px 15px;
+  cursor: pointer;
   color: white;
   font-size: 12px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 button:hover{
-  background-color: rgba(0, 0, 0, 0.336);
-  box-shadow: 3px 2px 10px white;
+  background-color: rgb(245, 245, 245);
+  box-shadow: 3px 2px 10px rgb(3, 3, 3);
   text-shadow: 3px 3px 3px white;
+  color: black;
+}
+
+
+@media screen and (max-width: 690px){
+  .buttonsCont{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 530px){
+  .individualView{
+    width: 100%;
+    min-width: 250px;
+  }
 }

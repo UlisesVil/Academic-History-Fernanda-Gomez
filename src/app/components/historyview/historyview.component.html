@@ -1,6 +1,5 @@
 <div class="viewGeneral">
   <div class="individualView" *ngFor="let item of semestryHystory">
-
     <h3>Historial al {{item.semester}} Semestre</h3>
     <div class="buttonsCont">
       <button (click)="downloadDocument(item.fileName)">Descargar PDF</button>
