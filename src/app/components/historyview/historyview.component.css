@@ -1,0 +1,54 @@
+.viewGeneral{
+  width: 100%;
+  /*border: 1px solid red;*/
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.individualView{
+  width: 50%;
+  /*border: 1px solid yellowgreen;*/
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.568);
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+  text-align: center;
+}
+
+.imgView{
+  width: 100%;
+}
+
+.buttonsCont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button{
+  width: fit-content;
+  background-color: rgba(255, 72, 0, 0.336);
+  border: none;
+  border-radius: 5px;
+  margin:10px;
+  padding: 10px 15px;
+  color: white;
+  font-size: 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover{
+  background-color: rgba(0, 0, 0, 0.336);
+  box-shadow: 3px 2px 10px white;
+  text-shadow: 3px 3px 3px white;
+}

@@ -1,0 +1,26 @@
+<div class="background">
+  <h1>{{mainData.university}}</h1>
+  <div class="studentGeneral">
+    <p class="studentData">Estudiante: {{mainData.student}}</p>
+    <p class="studentData">Matricula: {{mainData.enrollment}}</p>
+    <p class="studentData">Plantel: {{mainData.campus}}</p>
+    <p class="studentData">Licenciatura: {{mainData.degree}}</p>
+  </div>
+
+
+  <div class="historyContainer">
+
+    <a  class="cards" *ngFor="let semester of history" [routerLink]="['/history-view',semester.id]">
+      <img class="historyImg"  src="{{semester.imageSmall}}" alt="{{semester.semester}} Semestre" title="{{semester.semester}} Semestre">
+      <div class="semesterGeneral">
+        <p class="semesterData">Semestre: {{semester.semester}}</p>
+        <p class="semesterData">Cursos Certificados: {{semester.certifiedCourses}}</p>
+        <p class="semesterData">Avance de Cursos: {{semester.advance}}</p>
+        <p class="semesterData">Promedio: {{semester.average}}</p>
+        <p class="semesterData">Creditos: {{semester.credits}}</p>
+        <p class="semesterData">Avance de Creditos: {{semester.creditsAdvance}}</p>
+      </div>
+    </a>
+  </div>
+
+</div>

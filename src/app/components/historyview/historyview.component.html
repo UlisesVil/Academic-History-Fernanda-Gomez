@@ -1,0 +1,11 @@
+<div class="viewGeneral">
+  <div class="individualView" *ngFor="let item of semestryHystory">
+
+    <h3>Historial al {{item.semester}} Semestre</h3>
+    <div class="buttonsCont">
+      <button (click)="downloadDocument(item.fileName)">Descargar PDF</button>
+      <button (click)="viewDocument(item.fileName)">Visualizar PDF en Navegador</button>
+    </div>
+    <img class="imgView" src="{{item.imageBig}}" alt="{{item.semester}} Semestre" title="{{item.semester}} Semestre">
+  </div>
+</div>
